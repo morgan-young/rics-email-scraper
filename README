@@ -1,0 +1,9 @@
+This repo scrapes email addresses from the Registered Institute of Chartered Surveyors and stores them in a CSV file for definitely 100% non spam use only.
+
+Setup from scratch:
+
+1. Download python3.9
+2. Download poetry
+3. Clone repo and CD into rics-scraper
+4. poetry install
+5. poetry run python3 src/robot.py

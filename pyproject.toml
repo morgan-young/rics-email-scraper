@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "scrape-rics-emails"
+version = "0.1.0"
+description = ""
+authors = ["morgan-young"]
+
+[tool.poetry.dependencies]
+python = "3.9.*"
+selenium = "4.5.0"
+pandas = "^1.5.2"
+lxml = "^4.9.2"
+webdriver-manager = "^3.8.5"
+Sphinx = "6.2.1"
+sphinx-rtd-theme = "^1.2.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
