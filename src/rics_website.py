@@ -1,6 +1,6 @@
 """
 This file contains all the functions relating to
-blockman.
+the rics website.
 
 """
 
@@ -11,6 +11,7 @@ import tempfile
 import time
 
 import requests
+from csv_processing import convert_list_to_csv
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -64,7 +65,7 @@ def store_surveyor_profile_urls(chrome) -> list:
     profile_urls = []
     try:
         # replace the second number with however many pages you want to scrape
-        for i in range(1, 10):
+        for i in range(1, 78):
             # detect the presence of profiles on the page
             WebDriverWait(chrome, 15).until(
                 EC.presence_of_element_located((By.ID, "more"))
@@ -98,7 +99,7 @@ def store_surveyor_profile_urls(chrome) -> list:
         return profile_urls
     except Exception as e:
         print(e)
-        print(profile_urls)
+        convert_list_to_csv(profile_urls, "surveyor_urls")
 
 
 def store_surveyor_email_address(chrome, profile_url) -> str:

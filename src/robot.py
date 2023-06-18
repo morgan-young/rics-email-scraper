@@ -42,7 +42,7 @@ def run_scraper(chrome):
         surveyor_email_list.append(email)
     print(surveyor_email_list)
 
-    convert_list_to_csv(surveyor_email_list, "surveyor_emails_pg1_pg10")
+    convert_list_to_csv(surveyor_email_list, "surveyor_emails")
 
 
 if __name__ == "__main__":
