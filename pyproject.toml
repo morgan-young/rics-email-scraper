@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "scrape-rics-emails"
+name = "building-company-scraper"
 version = "0.1.0"
 description = ""
 authors = ["morgan-young"]
